@@ -1,0 +1,218 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:rgb(61, 61, 61);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 0 1em;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 0 2em;
+}
+
+.articles {
+    flex: 3;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#canarias {
+    
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+
+}
+
+#taraguisinpalo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+
+    
+}
+
+#baldo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+article h2 {
+    margin: 0 0 0.5em;
+}
+
+article .date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.comments {
+    margin-top: 1em;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5em;
+}
+
+.comments button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    background-color: #555;
+}
+
+
+.sidebar {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.sidebar .categories, .sidebar .latest-posts, .sidebar .social-media {
+    background-color: rgb(0, 148, 20);
+    color: white;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    margin: 0 0 1em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5em;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.main-content {
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        margin: 0.5em 0;
+    }
+}
+
+#videofondo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
